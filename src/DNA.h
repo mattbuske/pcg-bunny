@@ -1,6 +1,12 @@
+/**
+ *	File: DNA.h - DNA Class Definition
+ *	Author: Matt Buske
+ *  Creation Date: 02/20/2014
+ */
 #ifndef DNA_H
 #define DNA_H
 
+// Includes
 #include <cstdlib>
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,10 +16,23 @@
 #include <cmath>
 #include <bitset>
 
+/**
+ * Use Standard Namespace
+ */
 using namespace std;
 
+/**
+ * DNA Class Definition
+ */
 class DNA {
 public:
+	/**
+	 * DNA Class Public Constructor
+	 * Params:
+	 *    int blockSize - 
+	 *    int numberBlocks - 
+	 *    bool isBlank - 
+	 */
 	DNA(int blockSize, int numberBlocks, bool isBlank){
 		bSize = blockSize;
 		numBlocks = numberBlocks;
@@ -25,8 +44,10 @@ public:
 		} else {
 			dna = 0x0;
 		}
-		
 	};
+	/**
+	 * DNA Class Public Destructor
+	 */
 	~DNA(){};
 	
 	unsigned short getDNA() const { return dna; }

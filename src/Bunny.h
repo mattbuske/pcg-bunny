@@ -1,6 +1,13 @@
+/**
+ *	File: Bunny.h - Bunny Class Definition
+ *	Author: Matt Buske
+ *  Creation Date: 02/19/2014
+ */
+
 #ifndef BUNNY_H
 #define BUNNY_H
 
+// Includes
 #include <cstdlib>
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,10 +15,17 @@
 #include <iostream>
 #include <vector>
 
+// Include the DNA Class Definition
 #include "DNA.h"
 
+/**
+ * Bunny Class Definition
+ */
 class Bunny {
 public:
+	/**
+	 * Bunny Class Public Destructor
+	 */
 	~Bunny(){ delete dna; };
 
 	DNA *getDNA() const { return dna; }

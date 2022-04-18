@@ -1,12 +1,23 @@
+/**
+ *	File: Bunny.cpp - Bunny Class Implementation
+ *	Author: Matt Buske
+ *  Creation Date: 02/19/2014
+ */
+
+/**
+ * Include the Bunny Class Definition
+ */
 #include "Bunny.h"
 
+/**
+ * Set The Defaults
+ */
 const int PAD_BLOCK_SIZE(3);
 const int BLOCK_SIZE(2);
 const int BLOCKS(5);
 
-
-
-/*Bunny DNA = (pad = 3 blocks (6 bits)). Then: 
+/*
+*	Bunny DNA = (pad = 3 blocks (6 bits)). Then: 
 *			5th block is Strategy,
 *			4th block is Build,
 *			3rd block is Mutation,
@@ -45,7 +56,7 @@ const int A(0);
 const string Bunny::ABILITY[] = { "Poison",
 								  "Heat",
 								  "Radiation",
-								  "Spacial Distortion"};
+								  "Spatial Distortion"};
 									
 const string Bunny::DEFENSE[] = { "Blends In",
 								  "Thick Skin",

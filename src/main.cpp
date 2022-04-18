@@ -1,3 +1,10 @@
+/**
+ *	File: main.cpp - Main Source File 
+ *	Author: Matt Buske
+ *  Creation Date: 02/19/2014
+ */
+
+// Includes
 #include <cstdlib>
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,9 +14,14 @@
 #include <time.h>
 #include <bitset>
 
+// Include the DNA Class Definition
 #include "DNA.h"
+// Include the Bunny Class Definition
 #include "Bunny.h"
 
+/**
+ * Use Standard Namespace
+ */
 using namespace std;
 
 /**
@@ -17,9 +29,14 @@ using namespace std;
 *  Bunnies!
 *
 *
-* compile: g++ bunny.cpp DNA.cpp main.cpp -g -o main
+* compile: g++ Bunny.cpp DNA.cpp main.cpp -g -o pcg-bunnies
 *
 **/
+
+/**
+ * Current Version
+ */
+const static string VERSION = "1.1.0";
 
 const static int BLOCK_SIZE = 2;
 const static int BLOCKS = 5;
@@ -86,14 +103,13 @@ void mutate(Bunny *b) {
 	b->mutate();
 }
 /*
-
 Highest score = 4 * 5 = 20;
 Mid-high score = 3 * 5 = 15;
 Mid-Low score = 2 * 5 = 10;
 Lowest score = 1 * 5 = 5;
 between 5 and 20 for possible fitness scores.
-between 19-20 for best case.
-between 11-18 for hopeful Monsters
+between 18-20 for best case.
+between 12-17 for hopeful Monsters
 all others die.
 */
 
@@ -245,14 +261,9 @@ int main(int argc, char** argv) {
 	runFitness();
 	run();
 	//generation = 1;
-///playerDNA->setDNA(0xe7);
+	///playerDNA->setDNA(0xe7);
 	//run();
-	
-	
-	
-	
-	
-	//cleanUp();
-	
+
+	cleanUp();
 
 }
