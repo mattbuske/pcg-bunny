@@ -9,7 +9,6 @@ extra_css:
   - stylesheets/extra.css
 plugins:
   - search
-  - macros
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -51,3 +50,5 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+'nav':
+    - 'PCG Bunnies!': 'index.md'

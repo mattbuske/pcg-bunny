@@ -1,5 +1,8 @@
 # PCG Bunnies Changelog
 
+## 10/24/2022 - v1.1.1
+- Added MKDocumentation and Pages workflow
+
 ## 04/19/2022 - v1.1.0
 - Fixed spelling error in Bunny.cpp
 - Added compiled binary to /dist folder
