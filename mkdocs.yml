@@ -1,0 +1,53 @@
+site_name: PCG Bunnies!
+site_description: The Search-Based Approach to Procedural Content Generation
+site_author: Matt Buske
+copyright: 2014-2022
+repo_url: https://github.com/mattbuske/pcg-bunny
+extra:
+    version: 1.1.1
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - search
+  - macros
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+theme:
+    name: material
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        #- navigation.tabs.sticky
+        - navigation.indexes
+        - navigation.top
+        - content.tabs
+        - content.tabs.link
+        - search.suggest
+        - search.highlight
+        - search.share
+    palette:
+      # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue 
+      accent: blue
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue 
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
