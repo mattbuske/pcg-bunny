@@ -12,11 +12,6 @@ plugins:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
 theme:
@@ -51,4 +46,10 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 'nav':
-    - 'PCG Bunnies!': 'index.md'
+    - 'PCG Bunnies!':
+        - 'index.md'
+        - 'Overview': 'overview.md'
+        - 'Deep Dive': 'deep-dive.md'
+        - 'Build': 'build.md'
+        - 'Release Notes': 'release-notes.md'
+        

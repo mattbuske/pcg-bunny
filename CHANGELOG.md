@@ -1,5 +1,8 @@
 # PCG Bunnies Changelog
 
+## 10/25/2022 - v1.1.2
+- Updated MKDocumentation, expanding on the documentation.
+
 ## 10/24/2022 - v1.1.1
 - Added MKDocumentation and Pages workflow
 
