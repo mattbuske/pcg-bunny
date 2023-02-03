@@ -1,35 +1,46 @@
-# Build the Project
-Download this repository to a location of your choosing in your development environment. Make sure you have g++ and all necessary dependencies installed on your system and then choose a build method below (all methods are relative to the root of the repository):
- 
+# Building the Project
+
+To build the project, follow these steps:
+
+1. Download this repository to your development environment.
+2. Make sure you have g++ and all necessary dependencies installed on your system.
+3. Choose one of the following build methods:
+
 ## Manual Compilation
-To compile the project manually:
+
+To compile the project manually, navigate to the `src` directory and run the following command:
+
 ```SHELL
-cd src
 mkdir -p dist
 g++ Bunny.cpp DNA.cpp main.cpp -g -o dist/pcg-bunnies
 ```
+
+This will create the `dist` directory and compile the project into an executable named `pcg-bunnies`.
  
 ## Compile via Build Script
-To compile the project from the build script:
+Navigate to the `src` directory and run the following command:
+
 ```SHELL
-cd src
 ./build-project
 ```
-The compiled program will be placed in the /src/dist folder and will be named 'pcg-bunnies'.
+
+This will run the provided build script and place the compiled program in the `src/dist` folder with the name 'pcg-bunnies'.
  
 ## Compile via Docker Compose
-To compile the program using docker compose:
+
+To compile the program using Docker Compose, run one of the following commands based on your Linux distribution:
+
 ```SHELL
-# For regular linux- IE RockyLinux
+# For regular Linux
 docker-compose build --no-cache latest
-# For Alpine linux
+# For Alpine Linux
 docker-compose build --no-cache alpine
 ```
  
-The resulting image will contain the compiled project in more than one location (depending on the image):
+The resulting image will contain the compiled project in multiple locations:
 
-- /src/dist/pcg-bunnies (all images)
-- /usr/sbin/pcg-bunnies (linux images)
-- /sbin/pcg-bunnies (Alpine images)
+- `/src/dist/pcg-bunnies` (all images)
+- `/usr/sbin/pcg-bunnies` (linux images)
+- `/sbin/pcg-bunnies` (Alpine images)
  
 To compile for a new release of this project, use the development versions (labeled -dev) and manually run the build scripts in the container to generate the binaries.

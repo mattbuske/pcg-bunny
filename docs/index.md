@@ -1,13 +1,17 @@
 # The Search-Based Approach to Procedural Content Generation - PCG Bunnies!
  
-This project demonstrates the <a href="http://pcgbook.com/wp-content/uploads/chapter02.pdf" target="_blank">search-based approach</a> to procedural content generation utilizing evolutionary search algorithms (See the <a href="https://pcgbook.com" target="_blank">PCG Book</a> for more info on procedural content generation and other approaches). This project evolves bunnies over a number of generations to achieve bunnies with desired traits and was developed in the Spring of 2014 at SUNY Oswego utilizing C++.
+ The purpose of this software project is to showcase the application of <a href="http://pcgbook.com/wp-content/uploads/chapter02.pdf" target="_blank">search-based procedural content generation</a> through the use of evolutionary search algorithms. This approach is a widely recognized method in the field of procedural content generation and is discussed in depth in the book <a href="https://pcgbook.com" target="_blank">"The PCG Book"</a>.
+
+The project focuses on evolving bunnies over multiple generations with the goal of obtaining bunnies with specific, desired traits. The project was developed during the spring of 2014 at SUNY Oswego using the C++ programming language.
  
 ## Contents
-1. [Overview](overview/)
+1. [Project Overview](overview/)
+    1. [Overview](overview/#overview)
     1. [Requirements](overview/#requirements)
     1. [Quick Start/Run](overview/#quick-startrun)
     1. [Project Output](overview/#project-output)
 4. [Project Deep Dive](deep-dive/)
+    1. [Overview](deep-dive/#overview)
     1. [Bunny DNA](deep-dive/#bunny-dna)
     2. [Attribute Types](deep-dive/#attribute-types)
     3. [Player DNA](deep-dive/#player-dna)

@@ -16,12 +16,12 @@ services:
       service: latest
     volumes:
       - type: bind
-        source: ./dist/linux
+        source: ${PWD}/dist/linux
         target: /src/dist
   alpine-dev:
     extends:
       service: alpine
     volumes:
       - type: bind
-        source: ./dist/alpine
+        source: ${PWD}/dist/alpine
         target: /src/dist

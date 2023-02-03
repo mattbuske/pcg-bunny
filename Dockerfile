@@ -2,12 +2,12 @@
 FROM rockylinux:8.5 AS base
 
 # Copy Over Build Scripts
-COPY /src /src
+COPY src /src
 
 # Set Working Directory
 WORKDIR /src
 
-# Run Command
+# Run Build and Install Steps
 RUN \
     # Update All
     dnf -y update-minimal && \
@@ -16,7 +16,7 @@ RUN \
     # Build Program
     ./build-project && \
     # Move Compiled Program
-    cp dist/pcg-bunnies /usr/sbin/pcg-bunnies && \
+    mv dist/pcg-bunnies /usr/sbin/pcg-bunnies && \
     # Clean up
     dnf clean all
 
@@ -24,8 +24,7 @@ RUN \
 FROM rockylinux:8.5 AS final
 
 # Copy from Base Layer
-COPY --from=base /src /src
 COPY --from=base /usr/sbin/pcg-bunnies /usr/sbin/pcg-bunnies
 
-# Init Entry Point
+# Set Entry Point
 ENTRYPOINT [ "/usr/sbin/init" ]
