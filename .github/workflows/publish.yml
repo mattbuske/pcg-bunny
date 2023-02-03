@@ -7,12 +7,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
         with:
           python-version: 3.x
       - run: pip install mkdocs-material
-      - run:
-          - cp readme.md code_of_conduct.md contributing.md license.md changelog.md docs/about/
-          - sed -i "/^nav:/a \ \ \ \ - About:\n\ \ \ \ \ \ \ - Introduction: \"docs/about/readme.md\"\n\ \ \ \ \ \ \ - Contributing: \"docs/about/contributing.md\"\n\ \ \ \ \ \ \ - Code Of Conduct: \"docs/about/code_of_conduct.md\"\n\ \ \ \ \ \ \ - MIT License: \"docs/about/license.md\"\n\ \ \ \ \ \ \ - Release Notes: \"docs/about/changelog.md\"" mkdocs.yml
+      - run: cat LICENSE.md >> docs/about/license.md
       - run: mkdocs gh-deploy --force
