@@ -1,5 +1,6 @@
 # Building the Project
 
+## Overview
 To build the project, follow these steps:
 
 1. Download this repository to your development environment.
@@ -7,7 +8,6 @@ To build the project, follow these steps:
 3. Choose one of the following build methods:
 
 ## Manual Compilation
-
 To compile the project manually, navigate to the `src` directory and run the following command:
 
 ```SHELL

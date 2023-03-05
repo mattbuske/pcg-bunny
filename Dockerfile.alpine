@@ -7,12 +7,16 @@ COPY src /src
 # Set Working Directory
 WORKDIR /src
 
-# Run Command
-RUN apk -U upgrade --no-cache \
-    && apk add --no-cache g++ \
-    && ./build-project \
-    && cp dist/pcg-bunnies /sbin/pcg-bunnies \
-    && rm -rf /var/cache/apk/*
+# Run Build and Install Steps
+RUN \
+    # Update All
+    apk -U upgrade && \
+    # Install g++
+    apk add g++ && \
+    # Build Program
+    ./build-project && \
+    # Move Compiled Program
+    cp dist/pcg-bunnies /sbin/pcg-bunnies
 
 # Final Layer
 FROM alpine:3.15 AS final

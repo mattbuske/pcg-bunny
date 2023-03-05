@@ -1,5 +1,11 @@
 # Release Notes
 
+## <a href="https://github.com/mattbuske/pcg-bunny/releases/tag/v1.1.4" target="_blank" title="v1.1.4 Release" alt="v1.1.4 Release">**v1.1.4 (03/05/2023)**</a>
+- Improved documentation
+- Upgraded MkDocs dependencies
+- Simplified Dockerfiles
+- Deleted the "dist" folder and build executables.
+
 ## <a href="https://github.com/mattbuske/pcg-bunny/releases/tag/v1.1.3" target="_blank" title="v1.1.3 Release" alt="v1.1.3 Release">**v1.1.3 (01/29/2023)**</a>
 - Added MIT License
 - Added Code Of Conduct

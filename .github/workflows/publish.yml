@@ -11,6 +11,6 @@ jobs:
       - uses: actions/setup-python@v3
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material
+      - run: pip install -r mkdocs.reqs
       - run: cat LICENSE.md >> docs/about/license.md
       - run: mkdocs gh-deploy --force

@@ -16,9 +16,7 @@ RUN \
     # Build Program
     ./build-project && \
     # Move Compiled Program
-    mv dist/pcg-bunnies /usr/sbin/pcg-bunnies && \
-    # Clean up
-    dnf clean all
+    mv dist/pcg-bunnies /usr/sbin/pcg-bunnies
 
 # Final Layer
 FROM rockylinux:8.5 AS final
