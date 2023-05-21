@@ -1,1 +1,0 @@
-Place Holder for the MIT License

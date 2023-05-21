@@ -7,25 +7,28 @@ To build the project, follow these steps:
 2. Make sure you have g++ and all necessary dependencies installed on your system.
 3. Choose one of the following build methods:
 
-## Manual Compilation
-To compile the project manually, navigate to the `src` directory and run the following command:
+## C++
 
-```SHELL
+### Manual Compilation
+
+To compile the project manually, navigate to the `src/c++` directory and run the following command:
+
+``` SHELL
 mkdir -p dist
 g++ Bunny.cpp DNA.cpp main.cpp -g -o dist/pcg-bunnies
 ```
 
 This will create the `dist` directory and compile the project into an executable named `pcg-bunnies`.
- 
-## Compile via Build Script
-Navigate to the `src` directory and run the following command:
+
+### Compile via Build Script
+Navigate to the `src/c++` directory and run the following command:
 
 ```SHELL
 ./build-project
 ```
 
-This will run the provided build script and place the compiled program in the `src/dist` folder with the name 'pcg-bunnies'.
- 
+This will run the provided build script and place the compiled program in the `src/c++/dist` folder with the name 'pcg-bunnies'.
+
 ## Compile via Docker Compose
 
 To compile the program using Docker Compose, run one of the following commands based on your Linux distribution:

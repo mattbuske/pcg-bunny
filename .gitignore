@@ -48,3 +48,7 @@ Temporary Items
 *.exe
 main.exe.stackdump
 *.zip
+
+## MkDocs User Stuff
+site
+user.mkdocs.yml

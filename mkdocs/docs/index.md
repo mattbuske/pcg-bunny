@@ -2,7 +2,7 @@
  
  The purpose of this software project is to showcase the application of <a href="http://pcgbook.com/wp-content/uploads/chapter02.pdf" target="_blank">search-based procedural content generation</a> through the use of evolutionary search algorithms. This approach is a widely recognized method in the field of procedural content generation and is discussed in depth in the book <a href="https://pcgbook.com" target="_blank">"The PCG Book"</a>.
 
-The project focuses on evolving bunnies over multiple generations with the goal of obtaining bunnies with specific, desired traits. The project was developed during the spring of 2014 at SUNY Oswego using the C++ programming language.
+The project focuses on evolving bunnies over multiple generations with the goal of obtaining bunnies with specific, desired traits.
  
 ## Contents
 1. [Project Overview](overview/)

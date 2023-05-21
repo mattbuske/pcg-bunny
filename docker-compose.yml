@@ -1,12 +1,12 @@
 version: "3.9"
 services:
   latest:
-    image: mattbuske/pcg-bunny:1.1.4
+    image: mattbuske/pcg-bunny:1.2.0
     command: /usr/sbin/init
     build:
       context: .
   alpine:
-    image: mattbuske/pcg-bunny:alpine-1.1.4
+    image: mattbuske/pcg-bunny:alpine-1.2.0
     command: /sbin/init
     build:
       context: .

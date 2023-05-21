@@ -1,3 +1,3 @@
 # Changelog / Release Notes
 
-Please see [here](docs/about/release-notes.md) for the most recent changes.
+Please see [here](https://mattbuske.github.io/pcg-bunny/about/release-notes/) for the most recent changes.
