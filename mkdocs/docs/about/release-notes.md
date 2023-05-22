@@ -1,6 +1,6 @@
 # Release Notes
 
-{%- macro release_header(release='v0.0.0',release_date='(01/01/1970)',name_space='deepworks-net/mkdocs-template') %}
+{%- macro release_header(release='v0.0.0',release_date='(01/01/1970)',name_space='mattbuske/pcg-bunny') %}
 ## <a href="https://github.com/{{ name_space }}/releases/tag/{{ release }}" target="_blank" title="{{ release }} Release" alt="{{ release }} Release">**{{ release }} {{ release_date }}**</a>
 {% endmacro -%}
 
@@ -10,6 +10,7 @@
 - Added mkdocs-macros-plugin as an mkdocs dependency
 - Restructured folders to reflect the different languages this project is implemented in
 - Recreated the project in C#
+
 
 {{ release_header('v1.1.4','(03/05/2023)') }}
 - Improved documentation
