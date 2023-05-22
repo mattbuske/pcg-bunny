@@ -56,7 +56,10 @@ theme:
         - 'index.md'
         - 'Overview': 'overview.md'
         - 'Deep Dive': 'deep-dive.md'
-        - 'Build': 'build.md'
+        - 'Build': 
+              - 'build/index.md'
+              - 'C++': 'build/cplusplus.md'
+              - 'C#': 'build/csharp.md'
     - 'About':
         - 'Contributing': 'about/contributing.md'
         - 'Code of Conduct': 'about/code-of-conduct.md'
