@@ -8,6 +8,8 @@
 - Improved documentation
 - Restructured documentation to fit the Deepworks Standard structure
 - Added mkdocs-macros-plugin as an mkdocs dependency
+- Restructured folders to reflect the different languages this project is implemented in
+- Recreated the project in C#
 
 {{ release_header('v1.1.4','(03/05/2023)') }}
 - Improved documentation
