@@ -104,8 +104,8 @@ all others die.
     
     public Bunny mate(Bunny theLover) {
         int b1 = dna.getDNA();
-	int b2 = theLover.getDNA().getDNA();
-	return new Bunny(dna.makeDNA((M1 & b1) | (M2 & b2)));
+	    int b2 = theLover.getDNA().getDNA();
+	    return new Bunny(dna.makeDNA((M1 & b1) | (M2 & b2)));
     }
     
     public static Bunny getRandomBunny() {

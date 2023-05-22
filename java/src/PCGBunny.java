@@ -194,9 +194,6 @@ public class PCGBunny {
             matureBunnies();
             mutateAll();
             runFitness();
-	}
-	//for (Bunny b : survived){
-            //b.print();
-	//}
+	    }
     }
 }

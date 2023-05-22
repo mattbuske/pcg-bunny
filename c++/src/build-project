@@ -4,7 +4,7 @@
 echo "Building PCG Bunnies!"
 
 # Make Dist Directory
-mkdir -p dist
+mkdir -p ../dist
 
 # Build Command
-g++ Bunny.cpp DNA.cpp main.cpp -g -o dist/pcg-bunnies
+g++ Bunny.cpp DNA.cpp main.cpp -g -o ../dist/pcg-bunnies

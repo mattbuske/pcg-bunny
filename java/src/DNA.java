@@ -55,11 +55,11 @@ public class DNA {
 
     public void setBlockNumber(int bNumber, int num) {
         int move = bNumber * bSize;
-	int mask = bit << move;
-	mask = ~mask & dna;
-	int block = num;
-	block <<= move;
-	dna = block | mask;
+	    int mask = bit << move;
+	    mask = ~mask & dna;
+	    int block = num;
+	    block <<= move;
+	    dna = block | mask;
     }
 
     public void mutate() {

@@ -36,7 +36,7 @@ using namespace std;
 /**
  * Current Version
  */
-const static string VERSION = "1.1.3";
+const static string VERSION = "1.2.0";
 
 const static int BLOCK_SIZE = 2;
 const static int BLOCKS = 5;
