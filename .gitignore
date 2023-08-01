@@ -406,3 +406,4 @@ MigrationBackup/
 
 net6.0/
 .vscode/
+.venv/

@@ -6,6 +6,8 @@ Welcome to the PCG Bunnies documentation! This project showcases the application
 
 The project was originally developed during the spring of 2014 at SUNY Oswego using the C++ programming language. Since then it has been built in a few different languages and better documentation has been added.
 
+What are you waiting for? [Jump in here!](core/index.md)
+
 ## Key Features
 - Demonstrates the implementation of search-based PCG using evolutionary algorithms
 - Produces bunnies with specific desirable traits through the evolution process
@@ -13,8 +15,8 @@ The project was originally developed during the spring of 2014 at SUNY Oswego us
 
 ## Contributing
 
-We welcome contributions from the open-source community to help improve this project. If you are interested in contributing, please refer to the [contributing guidelines](contributing.md) for more information.
+We welcome contributions from the open-source community to help improve this project. If you are interested in contributing, please refer to the [contributing guidelines](about/contributing.md) for more information.
 
 ## License
 
-This project is licensed under the [MIT License](license.md).
+This project is licensed under the [MIT License](about/license.md).

@@ -1,4 +1,4 @@
-site_name: PCG Bunnies v1.2.0
+site_name: PCG Bunnies
 site_description: The Search-Based Approach to Procedural Content Generation
 site_author: Matt Buske
 copyright: Matt Buske - 2014-2023
@@ -51,11 +51,11 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 'nav':
-    - 'Home': 'about/readme.md'
+    - 'Home': 'index.md'
     - 'PCG Bunnies!':
-        - 'index.md'
-        - 'Overview': 'overview.md'
-        - 'Deep Dive': 'deep-dive.md'
+        - 'core/index.md'
+        - 'Overview': 'core/overview.md'
+        - 'Deep Dive': 'core/deep-dive.md'
         - 'Build': 
               - 'build/index.md'
               - 'C++': 'build/cplusplus.md'
