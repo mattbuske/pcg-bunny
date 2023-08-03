@@ -4,13 +4,15 @@
 ## <a href="https://github.com/{{ name_space }}/releases/tag/{{ release }}" target="_blank" title="{{ release }} Release" alt="{{ release }} Release">**{{ release }} {{ release_date }}**</a>
 {% endmacro -%}
 
-{{ release_header('v1.2.0','(08/01/2023)') }}
+{{ release_header('v1.2.0','(08/03/2023)') }}
 - Improved documentation
 - Restructured documentation to fit the Standard MkDocs structure
 - Updated documentation to address new warnings from MkDocs 1.5+
 - Updated python packages in requirements.txt
 - Updated Github publish action to newest version
 - Restructured folders to reflect the different languages this project is implemented in
+- Updated License file to remove file extension
+- Removed License file from generated documentation
 - Recreated the project in C#
 
 {{ release_header('v1.1.4','(03/05/2023)') }}
