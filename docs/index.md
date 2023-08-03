@@ -19,4 +19,4 @@ We welcome contributions from the open-source community to help improve this pro
 
 ## License
 
-This project is licensed under the [MIT License](about/license.md).
+This project is licensed under the [MIT License](https://github.com/mattbuske/pcg-bunny/blob/main/LICENSE).
