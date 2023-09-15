@@ -1,0 +1,27 @@
+version: "3.9"
+services:
+  latest:
+    image: mattbuske/pcg-bunny:cs-1.2.0
+    command: /usr/sbin/init
+    build:
+      context: .
+  alpine:
+    image: mattbuske/pcg-bunny:cs-alpine-1.2.0
+    command: /sbin/init
+    build:
+      context: .
+      dockerfile: Dockerfile.alpine
+  latest-dev:
+    extends:
+      service: latest
+    volumes:
+      - type: bind
+        source: ${PWD}/dist/linux
+        target: /src/dist
+  alpine-dev:
+    extends:
+      service: alpine
+    volumes:
+      - type: bind
+        source: ${PWD}/dist/alpine
+        target: /src/dist
