@@ -15,6 +15,7 @@
 - Removed License file from generated documentation
 - Recreated the project in C#
 - Added Dependabot to Github Actions
+- Bumped versions in requirements.txt
 
 {{ release_header('v1.1.4','(03/05/2023)') }}
 - Improved documentation
