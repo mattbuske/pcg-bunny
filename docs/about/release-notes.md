@@ -4,7 +4,7 @@
 ## <a href="https://github.com/{{ name_space }}/releases/tag/{{ release }}" target="_blank" title="{{ release }} Release" alt="{{ release }} Release">**{{ release }} {{ release_date }}**</a>
 {% endmacro -%}
 
-{{ release_header('v1.2.0','(09/15/2023)') }}
+{{ release_header('v1.2.0','(09/21/2023)') }}
 - Improved documentation
 - Restructured documentation to fit the Standard MkDocs structure
 - Updated documentation to address new warnings from MkDocs 1.5+
